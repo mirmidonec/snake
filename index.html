@@ -6,6 +6,8 @@
     <title>Unity WebGL Player | New Unity Project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -24,6 +26,27 @@
       </div>
     </div>
     <script>
+
+const AdController = window.Adsgram.init({ blockId: "962" });
+	  // window.addEventListener("click", event => {
+	  // 	    AdController.show().then((result) => {
+	  // 	  	window.unityInstance.SendMessage('EndGamePanel', 'ContinueGameAfterAds');	 
+    //     }).catch((result) => {
+		// 	console.log(JSON.stringify(result, null, 4));
+    //     })
+	  // });
+	  AdController.addEventListener('onSkip', () => {
+	  	window.unityInstance.SendMessage('EndGamePanel', 'ContinueGameAfterAds');	 
+
+	   });
+	  AdController.addEventListener('onError', () => {
+	  	window.unityInstance.SendMessage('EndGamePanel', 'ContinueGameAfterAds');	 
+
+	  });
+	  AdController.addEventListener('onBannerNotFound', () => {
+	  	window.unityInstance.SendMessage('EndGamePanel', 'ContinueGameAfterAds');	 
+
+	   });
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
