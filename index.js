@@ -38,9 +38,9 @@ window.addEventListener("load", function () {
   var buildUrl = "Build";
   var loaderUrl = buildUrl + "/snake.loader.js";
   var config = {
-    dataUrl: buildUrl + "/snake.data.unityweb",
-    frameworkUrl: buildUrl + "/snake.framework.js.unityweb",
-    codeUrl: buildUrl + "/snake.wasm.unityweb",
+    dataUrl: buildUrl + "/snake.data.br",
+    frameworkUrl: buildUrl + "/snake.framework.js.br",
+    codeUrl: buildUrl + "/snake.wasm.br",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "New Unity Project",
