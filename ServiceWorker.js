@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-New Unity Project-1.0.15";
 const contentToCache = [
     "Build/snake.loader.js",
-    "Build/snake.framework.js.br",
-    "Build/snake.data.br",
-    "Build/snake.wasm.br",
+    "Build/snake.framework.js.unityweb",
+    "Build/snake.data.unityweb",
+    "Build/snake.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
